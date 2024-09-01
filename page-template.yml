@@ -1,6 +1,6 @@
 bootstrap.Page:
   cdn: true
-  theme: Cerulean
+  theme: Sandstone
   name: Application Page Template
   language: EN
   stylesheets: 
@@ -33,7 +33,7 @@ bootstrap.Page:
       </script>    
   body:
     app.Page:
-      fluid: true
+      fluid: false
       navigation-panel:
         style: SEARCHABLE_TREE # COLLAPSIBLE_CARDS
         collapsible: true
