@@ -1,7 +1,7 @@
 Action:
     icon: https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/external-construction-construction-wanicon-lineal-color-wanicon-1.png
-    text: Bob Construction Company
-    # location: https://github.com/Nasdanika-Demos - breaks the site in 2024.8.0, will be fixed in subsequent releases
+    text: Bob's Construction Company
+    location: https://github.com/Nasdanika-Demos
     children:
       - Action:
           location: ${base-uri}search.html
@@ -10,16 +10,16 @@ Action:
           content:
             Interpolator:
               source:
-                exec.content.Resource: classpath://org/nasdanika/html/model/app/gen/search.html
+                exec.content.Resource: classpath://org/nasdanika/models/app/gen/search.html
       - Action:
           location: ${base-uri}glossary.html
           text: Glossary
           content:
             Interpolator:
               source:
-                exec.content.Resource: classpath://org/nasdanika/html/model/app/gen/semantic-info.html
+                exec.content.Resource: classpath://org/nasdanika/models/app/gen/semantic-info.html
     navigation:
       - Action:
           text: Source
           icon: fab fa-github
-          location: https://github.com/Nasdanika-Demos/bob-the-builder
+          location: https://github.com/Nasdanika-Demos/bob-the-builder  

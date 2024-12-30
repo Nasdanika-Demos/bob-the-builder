@@ -1,0 +1,11 @@
+Action:
+    navigation:
+      - Action:
+          location: about-bob.html
+          icon: fas fa-help
+          text: About
+          content:
+            Interpolator:
+              source:
+                exec.content.Text: |    
+                  This is an example of a page from an action prototype.
