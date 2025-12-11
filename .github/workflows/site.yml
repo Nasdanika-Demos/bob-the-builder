@@ -40,7 +40,7 @@ jobs:
         run: |
           chmod u+x nsd
           pwd
-          ./nsd drawio ../diagram.drawio html-app -r ../root-action.yml --add-to-root site -r=-1 -F ../page-template.yml ../docs
+          ./nsd drawio ../diagram.drawio html-app -F ../bob-decorator.groovy -r ../root-action.yml --add-to-root site -r=-1 -F ../page-template.yml ../docs
           ls ../docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
