@@ -15,9 +15,9 @@ new RepresentationElementFilter() {
 
     @Override
     void filterRepresentationElement(
-            ModelElement<?> sourceElement, 
-            ModelElement<?> representationElement,
-            Map<Element<?>, ProcessorInfo<Object,Object,Object,WidgetFactory>> registry, ProgressMonitor progressMonitor) {
+	ModelElement<?> sourceElement, 
+	ModelElement<?> representationElement,
+	Map<Element<?>, ProcessorInfo<WidgetFactory,WidgetFactory,Object,WidgetFactory>> registry, ProgressMonitor progressMonitor) {
 
         if ("Bob".equals(representationElement.getLabel())) {
             representationElement.style("imageBorder", "default");
